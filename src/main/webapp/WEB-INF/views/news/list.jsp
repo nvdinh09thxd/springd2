@@ -20,7 +20,7 @@
 		</ul>
 	</c:if> --%>
 	<c:choose>
-		<c:when test="${datas ne null}">
+		<c:when test="${not empty datas}">
 			<ul>
 				<c:forEach items="${datas}" var="news">
 					<li><a
